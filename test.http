@@ -1,0 +1,34 @@
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+  "name": "John",
+  "surname": "Smith",
+  "birthday": "2022-02-28",
+  "email": "test4@example.com",
+  "password": "test12345"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "test3@example.com",
+  "password": "test12345"
+}
+
+###
+
+PATCH  http://localhost:3000/user
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNjQzNzQxMzYxLCJleHAiOjE2NDM5MTQxNjF9.9qZ_c4j-pF0wS2noGmXysML_On1TdqeUOnyc9Twm29U
+
+{
+  "name": "John1",
+  "surname": "Smith1",
+  "birthday": "2022-01-28"
+}
+
+
